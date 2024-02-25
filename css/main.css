@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('../fonts/Font-Pixel.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'pixel', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* background-color: #7eb900; */
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    position: relative;
+}
+
+body > div#select-controls {
+    position: absolute;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 30;
+}
+
+body > div#select-controls > div.option-gamepad {
+    width: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+    height: 100vh;
+    padding: 10px 0px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 400ms;
+    position: absolute;
+    top: 0px;
+}
+
+body > div#select-controls > div#xbox:hover {
+    width: 60%;
+    z-index: 6;
+}
+
+body > div#select-controls > div#playstation:hover {
+    width: 60%;
+    z-index: 6;
+}
+
+body > div#select-controls > div#xbox {
+    background-color: #7eb900;
+    left: 0%;
+}
+
+body > div#select-controls > div#playstation {
+    background-color: #006FCD;
+    right: 0%;
+}
+
+body > main {
+    display: none;
+}
+
+body > main > p#resposta {
+    font-size: 5em;
+    display: flex;
+    font-weight: bolder;
+    text-align: center;
+}
